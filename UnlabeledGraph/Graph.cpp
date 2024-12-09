@@ -76,3 +76,4 @@ ostream& operator<< (ostream &out, const Graph &tyrellgraph)
     }
   return out;
 };
+
