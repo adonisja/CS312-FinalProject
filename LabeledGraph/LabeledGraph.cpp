@@ -8,10 +8,15 @@
 
 using namespace std;
 
-void LabeledGraph::add_vertex(string vlabel){
-  labels.push_back(vlabel);
+void LabeledGraph::add_vertex(string vlabel){  
+  // vlabel is added as new variable to hold the strings that represent names
+  labels.push_back(vlabel); //the vlabel is added to a list called labels
   indexedLabels.insert(pair<string, int>(vlabel, V()));
-  set<int> s;
+  /* indexLabels is now created as a map linking each label (string/name) to an index (or number)
+  making it easier to look-up, remember this is mapped e.g {"Chris Pratt": 0} */
+  set<int> s; 
+  /* now we initialize a set with to store the neighbors for each index */
+  
   vertices.push_back(s);
 }
 
