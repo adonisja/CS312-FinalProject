@@ -65,18 +65,20 @@ ostream& operator<< (ostream &out, const LabeledGraph &g) {
 }
 
 /* Q1: What new variables were added to LabeledGraph that were not in Graph
- and what do you think they are used for?
+  and what do you think they are used for?
     - vlabel was added to store the string representation of names for the graph
     - labels was used as a container to store those vlabels in a list.
     - indexedLabels maps each vlabel to an integer to make it easier to access the data in
       the map.
     - here the container that stores the list of connections is called "vertices", however
-      it is the same as "edges" in UnlabeledGraph.cpp
+      it functions similarly to "edges" in UnlabeledGraph.cpp
   
   Q2: What changes do you see in the add_vertex and add_edge functions
       (LabeledGraph vs Graph)? Explain why you think those changes were made.
-    -
- 
- 
- 
- */
+    - In the LabeledGraph, with both the add_vertex and add_edge functions, the functions
+      check if the string entered is within the graph, if not it will create a new vertex
+      using the entered string, therefore the vertex does not have to pre-exist before
+      creating an edge, however in the Unlabeled Graph both functions directly check
+      if the index exits, therefore if the index doesn't already exist when creating 
+      an edge, it will throw an error.
+*/
