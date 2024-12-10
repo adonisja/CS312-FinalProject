@@ -4,7 +4,7 @@ Final Group Project for CS312 (Analysis of Algorithms Course)
 
 ## Project Description
 
-Part 1 of this project begins with an introduction of graph data structure with various functionalities such as adding vertices, adding edges, checking for vertex existence, and retrieving neighbors. It also includes an example client program to demonstrate the usage of the graph class.
+Part 1 of this project begins with an introduction to the graph data structure utilizing various functionalities such as adding vertices, adding edges, checking for vertex existence, and retrieving neighbors. It also includes an example client program to demonstrate the usage of the graph class.
 
 ## Features
 
@@ -16,11 +16,10 @@ Part 1 of this project begins with an introduction of graph data structure with 
 
 ## Folder Structure
 
-CS312-FinalProject/ ├── Graph.h ├── Graph.cpp ├── GraphClient.cpp ├── LabeledGraph.h ├── LabeledGraph.cpp ├── README.md └── Makefile
+CS312-FinalProject/ ├── Graph.h ├── Graph.cpp ├── GraphClient.cpp ├── LabeledGraph.h ├── LabeledGraph.cpp ├── README.md
 
 ## Contributors
 
 - Akkeem Tyrell
 - Sean Robleto
 
-# Files use the command g++ -std=c++20 to run
