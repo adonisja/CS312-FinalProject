@@ -10,7 +10,7 @@ LabeledGraph::LabeledGraph() {
 }
 
 LabeledGraph::LabeledGraph(const std::string& fileName) {
-    char delimiter = ','; // Assumes a comma-separated file for singers
+    char delimiter = ','; // Assumes a comma-separated file for singers also enables easy replacement
     create_artistMap(fileName, delimiter);
 }
 
