@@ -17,7 +17,7 @@ LabeledGraph::LabeledGraph(const std::string& fileName) {
 void LabeledGraph::create_artistMap(const std::string& fileName, char delimiter) {
     std::ifstream file(fileName);
 
-    if (!file.is_open()) {
+    if (!file) {
         std::cerr << "Unable to open file: " << fileName << std::endl;
         return;
     }
